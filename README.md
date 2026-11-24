@@ -1,24 +1,16 @@
-# Jiuzhaigou · Little Worlds (Version 4)
+# Jiuzhaigou Little Worlds — V5
 
-Cute, playful 3D interpretation inspired by user-provided references. This is **not** a geographically accurate model.
+## What changed
+- iPhone AR now loads four explicit USDZ files rather than relying on browser GLB-to-USDZ conversion. Each USDZ includes UsdPreviewSurface materials. This is a best-effort technical fix, **not yet verified on a physical iPhone**.
+- Browser explorer includes falling winter snow, summer sunshine, spring blossoms, autumn leaves, and extra moving waterfall droplets.
+- Apple Quick Look AR displays static models. The HTML weather/waterfall animation does **not** animate inside AR.
 
-## GitHub Pages upload
-Upload ALL files from this folder into the **root** of the GitHub repository (not inside another folder):
-- `index.html`
-- `ar.html`
-- `jiuzhaigou-spring.glb`
-- `jiuzhaigou-summer.glb`
-- `jiuzhaigou-autumn.glb`
-- `jiuzhaigou-winter.glb`
+## Upload to GitHub Pages
+Unzip this folder. Upload all 10 project files (index.html, ar.html, 4 GLB and 4 USDZ) to the **root** of Linar-2026/jiuzhaigou-explorer. Replace the old files with the same names. Keep filenames exactly. Commit changes and wait for the green GitHub Pages deployment check.
 
-You do not need `make_models.py` on GitHub. If GitHub already has files with the same names, upload these files to replace them.
+Open https://linar-2026.github.io/jiuzhaigou-explorer/ on desktop and Safari on iPhone. Choose a season in the 3D explorer; for AR, tap AR test, choose season again, then Place in AR. Test Object view colors and AR placement.
 
-In Settings > Pages, select Deploy from branch > main > /(root). Wait for deployment, then visit `https://linar-2026.github.io/jiuzhaigou-explorer/`.
+## Limitations
+The browser scene and AR assets are separate artistic interpretations. Browser weather and water effects are not baked into the GLB/USDZ models. These models are not photogrammetry or surveyed Jiuzhaigou geography. No headset VR is included.
 
-## Tested versus experimental
-- `index.html`: Real interactive 3D created procedurally in JavaScript with Three.js. Season switching, orbit/pinch, viewpoints, bilingual notes, and mobile collapsible panel are implemented. **Requires internet** to load Three.js from jsDelivr CDN. Cannot be tested by simply opening an offline file without internet.
-- `ar.html`: Four-season GLB previews and **experimental** iPhone Safari AR using model-viewer's automatic Quick Look conversion. No separately validated USDZ files are included. White materials may still occur in Quick Look. Do not claim AR is validated until checked on a physical iPhone.
-- WebXR VR: not included. iPhone Safari does not provide general WebXR immersive VR support.
-
-## Notes
-The desktop/browser scene is richer than the four lightweight AR GLB assets. This version prioritizes a working and appealing browser explorer, rather than pretending that unverified AR works.
+If AR remains white, capture the Object view screenshot and the iOS version. USDZ compatibility must be checked on device; material binding is not a guarantee.
