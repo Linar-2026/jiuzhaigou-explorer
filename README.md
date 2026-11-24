@@ -1,36 +1,23 @@
-# Jiuzhaigou Little Worlds — Version 7
+# Jiuzhaigou Little Worlds — Version 9
 
-## New interactions
-- **Five clickable treasures:** blossom, butterfly, leaf, water jewel, golden star; counter and completion postcard.
-- **Guided four-stop journey:** forest → lake → waterfall → panorama. Use **Next stop**.
-- **Three discovery markers:** open bilingual information; lake/waterfall markers trigger a ripple.
-- **Four seasons:** spring, summer, autumn, winter; animated seasonal weather and a short fade between scenes.
-- **Water:** turn on **Tap water**, then tap the lake or waterfall pool to generate expanding ripples. Waterfall droplets already animate.
-- **Nature sound:** user-activated synthesized water-like ambient sound; turn off using same button.
-- **Explore land:** V6 keyboard walking (WASD) and mobile arrow controls preserved.
-- **iPhone AR:** four GLB previews and four USDZ files; select season in `ar.html`, then open Apple Quick Look. The browser effects, collectibles, and walking controls are NOT available inside Apple's Quick Look. USDZ colors are not independently verified on a physical iPhone.
+## What's new
+- **Start Adventure**: visible game entry and step-by-step instructions.
+- Six interactive missions, advanced by actual visitor actions: rotate the scene, discover the forest, create a lake ripple, discover the waterfall, explore all four seasons, and tap a butterfly.
+- Progress tracking and a completion screen; replay and optional bonus Nature Quiz.
+- **AR Explorer Challenge** on the `ar.html` webpage: four seasonal questions and earned badges, with instructions. The questions are played on the webpage, not inside Apple Quick Look.
+- Retains V8's ambient sound, Nature Quest, butterfly discovery, waterfall animation, Explore Land controls, four seasonal GLB and USDZ assets.
+
+## Important iPhone AR limitation
+Apple Quick Look can display and place a USDZ miniature, but cannot run the website's custom JavaScript mini-games inside its camera view. The AR page therefore offers a **companion browser game** before/after opening Quick Look. Colors and placement of USDZ still need real-device testing; this version does not claim to have fixed a white-model issue.
 
 ## Upload to GitHub Pages
-1. Unzip this package on your computer.
-2. In `https://github.com/Linar-2026/jiuzhaigou-explorer`, choose **Add file → Upload files**.
-3. Drag the **11 extracted files**, not the ZIP or the parent folder, to the repository root. Confirm the names are exactly `index.html`, `ar.html`, four `jiuzhaigou-*.glb`, four `jiuzhaigou-*.usdz`, `README.md`.
-4. Commit changes and wait for GitHub Pages deployment to finish.
-5. Open `https://linar-2026.github.io/jiuzhaigou-explorer/` and hard refresh if needed.
+1. Extract the ZIP.
+2. Visit https://github.com/Linar-2026/jiuzhaigou-explorer
+3. Upload all 11 files from inside this folder to the repository **root**, replacing same-named files; do not upload the ZIP itself.
+4. Commit changes, wait for Pages deployment, then visit https://linar-2026.github.io/jiuzhaigou-explorer/
+5. On iPhone Safari, open the AR page and test the seasonal models in Quick Look.
 
-### Limitations and tests
-- Internet required for Three.js and model-viewer CDN imports.
-- This is original **stylized educational art**, not a surveyed or photorealistic reconstruction of Jiuzhaigou.
-- Test desktop 3D controls, iPhone Safari touch controls, and iPhone AR **separately**. A successful desktop 3D preview does not prove iPhone AR renders colors correctly.
-- iPhone Safari does not provide general immersive WebXR VR; no VR headset experience is claimed.
-- Seasonal fade is a short overlay transition, not full geometry morphing.
-- Browser nature audio is synthesized, not a real field recording.
+**Quick update:** If all four GLB and four USDZ models already exist in the repository, replacing `index.html` and `ar.html` is enough for the new gameplay.
 
-
-## Version 8 additions
-- Opt-in procedural audio: wind, waterfall proximity and soft synthesized bird chirps (no third-party recordings). Audio requires a user tap, including on iPhone.
-- Volume slider, on/off button; sound intensity changes as the walking camera approaches the waterfall.
-- Three interactive stylized butterflies; tap to discover.
-- Nature Quest 5 tasks: discover forest, lake, waterfall, all four seasons, and complete 3-question quiz with at least 2 correct.
-- Existing 5 collectible gems, seasonal effects, guided tour, walking mode, AR GLB/USDZ assets are preserved.
-- AR Quick Look does NOT run browser audio, butterflies or mini-games; AR remains a separate static seasonal model. USDZ color accuracy requires testing on iPhone.
-- Sound is generated locally by Web Audio, so no external MP3 files or licenses are needed.
+## Verification
+HTML and JavaScript syntax can be checked locally; interactive gameplay and AR device compatibility require testing on your computer and iPhone. Browser resources load from external CDNs.
