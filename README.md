@@ -14,3 +14,6 @@ Open https://linar-2026.github.io/jiuzhaigou-explorer/ on desktop and Safari on 
 The browser scene and AR assets are separate artistic interpretations. Browser weather and water effects are not baked into the GLB/USDZ models. These models are not photogrammetry or surveyed Jiuzhaigou geography. No headset VR is included.
 
 If AR remains white, capture the Object view screenshot and the iOS version. USDZ compatibility must be checked on device; material binding is not a guarantee.
+
+## Version 6: Explore Land mode
+On the main website choose **🚶 Explore land**. On a computer use WASD to move and drag to look; on iPhone use the on-screen arrows and drag the 3D view to look. Press **↩ Panorama** to leave. This is browser-based first-person exploration, not Apple AR walking. Boundaries keep the camera on approximate dry land. The AR files are unchanged from Version 5 and still require testing on an iPhone.
