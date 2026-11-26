@@ -1,0 +1,2 @@
+Version 12.1 — Simplified Chinese localization update
+Translated main and AR controls, challenge questions, status messages, mobile menus, and dynamically generated labels. Language preference persists across pages. Previous audio and AR behavior unchanged.
