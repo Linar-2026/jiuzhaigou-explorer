@@ -1,0 +1,18 @@
+VERSION 11 — MOBILE COMPATIBILITY PATCH
+
+Replace index.html and ar.html in the GitHub repository root. Keep all GLB and USDZ files unchanged.
+
+Changes:
+- Mobile sound test button; audio context is resumed before playing splash.
+- Reduced mobile renderer resolution and disabled real-time shadows on small screens.
+- Hides overlapping legacy floating quest/audio/discovery panels on narrow screens; primary adventure and bottom controls remain.
+- AR page loads model-viewer from jsDelivr rather than Google AJAX CDN.
+- AR page offers WebXR, Scene Viewer and Quick Look in supported environments, with 3D fallback messaging.
+- AR model viewer uses no auto-rotate or real-time shadow.
+
+LIMITATIONS:
+- Native AR is device/browser dependent. Android AR may require Google Play Services for AR, which may be unavailable on some China-market phones.
+- Third-party CDN access in mainland China can vary; for fully offline/China-reliable use, vendor model-viewer and Three.js assets locally.
+- USDZ color/material rendering must be verified on actual iPhones.
+- This update was syntax and ZIP-checked, not device-tested.
+- The game itself has not been redesigned in this patch.
