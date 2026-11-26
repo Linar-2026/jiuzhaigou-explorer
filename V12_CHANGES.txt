@@ -1,0 +1,16 @@
+VERSION 12 — Mobile Sound + Seasonal 3D Preview
+
+- iPhone sound: a single shared Web Audio context for splash, sound test and nature ambience. Audio is resumed synchronously during user taps; a two-tone sound test makes testing easier.
+- Nature audio can be toggled without closing the shared context; avoids conflicts between audio systems.
+- AR page: lightweight animated seasonal particles in the web 3D preview: spring petals, summer fireflies, autumn leaves and winter snow. Effects are drawn on a canvas over the model viewer, not embedded in the model.
+- AR page: sound test button, light mode button, clearer fallback messaging.
+- Native AR on iPhone Quick Look and Android Scene Viewer remains dependent on device/browser services. Native camera AR displays static USDZ/GLB models; webpage particles and audio cannot transfer into native AR.
+- This release cannot make Honor 80 native AR work without supported AR services; use the animated 3D viewer fallback.
+
+TEST:
+1. Open index.html on iPhone Safari over HTTPS. Tap Enable / Test Sound and listen for tones + splash.
+2. Open Sound & Quest > Enable audio; tap water to test splash.
+3. Open ar.html; choose each season and watch the animated web preview.
+4. On Honor 80, if AR is unavailable, use the interactive 3D preview. Test in the device browser.
+
+Physical device tests have NOT been performed. Third-party CDNs still require network access.
